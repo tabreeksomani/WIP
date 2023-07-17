@@ -1,16 +1,22 @@
 <template>
   <app-navigation></app-navigation>
-  <feature-carousel></feature-carousel>>
+
+  <feature-carousel></feature-carousel>
+
+  <our-programs></our-programs>
 </template>
 
 <script>
 import AppNavigation from '@/components/AppNavigation';
 import FeatureCarousel from '@/components/Carousel.vue';
+import OurPrograms from '@/components/Programs.vue';
+
 export default {
   name: 'App',
   components: {
     AppNavigation,
-    FeatureCarousel
+    FeatureCarousel,
+    OurPrograms
   }
 };
 </script>
