@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <app-navigation></app-navigation>
+  <feature-carousel></feature-carousel>>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import AppNavigation from '@/components/AppNavigation';
+import FeatureCarousel from '@/components/Carousel.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AppNavigation,
+    FeatureCarousel
   }
-}
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.v-app-bar {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.v-btn,
+.v-list-item {
+  font-family: 'Montserrat', sans-serif !important;
 }
 </style>
