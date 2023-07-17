@@ -1,16 +1,29 @@
 <template>
-  <v-app>
-    <v-content transition="slide-x-transition">
-      <AppNavigation />
-      <router-view></router-view>
-    </v-content>
-  </v-app>
+  <app-navigation></app-navigation>
+  <feature-carousel></feature-carousel>>
 </template>
 
 <script>
+import AppNavigation from '@/components/AppNavigation';
+import FeatureCarousel from '@/components/carousel.vue';
+
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    AppNavigation,
+    FeatureCarousel
+  }
 };
 </script>
 
-<style></style>
+<style scoped>
+.v-app-bar {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.v-btn,
+.v-list-item {
+  font-family: 'Montserrat', sans-serif !important;
+}
+</style>
