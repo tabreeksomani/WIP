@@ -21,6 +21,8 @@
             </v-menu>
             <v-btn flat class="hidden-sm-and-down">Programs</v-btn>
             <v-btn flat class="hidden-sm-and-down">Podcast</v-btn>
+            <v-btn flat class="hidden-sm-and-down">Blog</v-btn>
+
             <v-menu>
                 <template v-slot:activator="{ props }">
                     <v-btn v-bind="props">
