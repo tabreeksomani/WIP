@@ -127,13 +127,18 @@
                 </v-expand-transition>
             </v-card>
         </div>
+        <upcoming-events></upcoming-events>
 
     </div>
 </template>
   
 <script>
+import UpcomingEvents from './UpcomingEvents.vue';
 export default {
     name: 'OurPrograms',
+    components: {
+        UpcomingEvents
+    },
     data: () => ({
         show1: false,
         show2: false,
