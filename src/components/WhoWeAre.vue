@@ -1,13 +1,114 @@
 <template>
-    <div style="height: 100vh;">
-        <h2>Our Partners</h2>
-        <h2>Who We Are </h2>
-        <h2>Our Impact</h2>
+    <div class="who-we-are-section">
+        <div class="heading">
+            <h2 class="section-title">Who We Are</h2>
+        </div>
+        <div class="content">
+            <div class="text">
+                <h4 class="sub-heading">Our Mission</h4>
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                    consectetur massa nec enim pulvinar ullamcorper. Suspendisse et magna
+                    sit amet turpis rutrum lacinia. Sed id lacus a elit iaculis rhoncus.
+                </p>
+                <h4 class="sub-heading">Our Values</h4>
+                <ul class="values-list">
+                    <li>Value 1: Lorem ipsum dolor sit amet</li>
+                    <li>Value 2: Consectetur adipiscing elit</li>
+                    <li>Value 3: Aenean consectetur massa nec enim pulvinar</li>
+                </ul>
+                <h4 class="sub-heading">Our Vision</h4>
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                    consectetur massa nec enim pulvinar ullamcorper. Suspendisse et magna
+                    sit amet turpis rutrum lacinia. Sed id lacus a elit iaculis rhoncus.
+                </p>
+                <div class="buttons">
+                    <a href="/our-story" class="btn">Our Story</a>
+                    <a href="/our-team" class="btn">Our Team</a>
+                </div>
+            </div>
+            <div class="image">
+                <img src="your-image-path.jpg" alt="Who We Are Image" class="who-we-are-image" />
+            </div>
+        </div>
     </div>
 </template>
-<script>
-export default {
-    name: 'WhoWeAre'
+  
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.who-we-are-section {
+    padding: 40px;
+    background-color: #f7f7f7;
 }
-</script>
-<style scoped></style>
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sub-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text {
+    width: 50%;
+}
+
+.paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.values-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.values-list li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.image {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.who-we-are-image {
+    max-width: 100%;
+    height: auto;
+}
+</style>
