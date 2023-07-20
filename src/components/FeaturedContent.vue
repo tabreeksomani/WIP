@@ -5,8 +5,11 @@
         <div class="content-grid">
             <div class="podcast-card">
                 <h3 class="content-title">Latest Podcast Episode</h3>
-                <iframe src="https://www.example.com/podcast-episode-1" width="100%" height="150" frameborder="0"
-                    allowfullscreen></iframe>
+                <iframe style="border-radius: 12px"
+                    src="https://open.spotify.com/embed/episode/3S9wKcMEMcV9fEAzqFitea?utm_source=generator&t=0" width="500"
+                    height="400" frameborder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
                 <p class="podcast-description">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
                     perspiciatis unde omnis iste natus error sit voluptatem accusantium
@@ -136,7 +139,6 @@ export default {
 .podcast-description {
     font-size: 14px;
     color: #666;
-    margin-top: 10px;
 }
 
 .cta-button {
