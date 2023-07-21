@@ -147,9 +147,12 @@ export default {
     },
     methods: {
         updateActiveTabFromRoute() {
-            const tabTitle = this.$route.params.tab;
-            const foundTab = this.tabs.find((tab) => tab.title.toLowerCase() === tabTitle.toLowerCase());
-            this.activeTab = foundTab ? this.tabs.indexOf(foundTab) : 0;
+            if (this.$route.path === '/getinvolved') {
+
+                const tabTitle = this.$route.params.tab;
+                const foundTab = this.tabs.find((tab) => tab.title.toLowerCase() === tabTitle.toLowerCase());
+                this.activeTab = foundTab ? this.tabs.indexOf(foundTab) : 0;
+            }
         },
     },
 }
