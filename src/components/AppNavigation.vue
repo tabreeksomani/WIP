@@ -6,7 +6,7 @@
             <v-toolbar-title>
                 {{ appTitle }}
             </v-toolbar-title>
-            <v-btn flat class="hidden-sm-and-down">Home</v-btn>
+            <v-btn flat class="hidden-sm-and-down" to="/">Home</v-btn>
             <v-menu>
                 <template v-slot:activator="{ props }">
                     <v-btn v-bind="props">
@@ -14,14 +14,16 @@
                     </v-btn>
                 </template>
                 <v-list>
-                    <v-list-item v-for="(item, index) in aboutItems" :key="index" :value="index">
+                    <v-list-item v-for="(item, index) in aboutItems" :key="index" :value="index" :to="item.link">
                         <v-list-item-title>{{ item.title }}</v-list-item-title>
                     </v-list-item>
                 </v-list>
             </v-menu>
-            <v-btn flat class="hidden-sm-and-down">Programs</v-btn>
-            <v-btn flat class="hidden-sm-and-down">Podcast</v-btn>
-            <v-btn flat class="hidden-sm-and-down">Blog</v-btn>
+
+            <v-btn flat to="/#programs" class="hidden-sm-and-down">Programs</v-btn>
+
+            <v-btn flat class="hidden-sm-and-down" to="/podcast">Podcast</v-btn>
+            <v-btn flat class="hidden-sm-and-down" to="/blog">Blog</v-btn>
 
             <v-menu>
                 <template v-slot:activator="{ props }">
@@ -30,12 +32,13 @@
                     </v-btn>
                 </template>
                 <v-list>
-                    <v-list-item v-for="(item, index) in getInvolvedItems" :key="index" :value="index">
+                    <v-list-item v-for="(item, index) in getInvolvedItems" :key="index" :value="index"
+                        @click=goToTab(item.title)>
                         <v-list-item-title>{{ item.title }}</v-list-item-title>
                     </v-list-item>
                 </v-list>
             </v-menu>
-            <v-btn flat class="hidden-sm-and-down">Contact Us</v-btn>
+            <v-btn flat class="hidden-sm-and-down" to="/contact">Contact Us</v-btn>
 
             <v-spacer class="hidden-sm-and-down"></v-spacer>
 
@@ -47,14 +50,32 @@
 <script>
 export default {
     name: 'AppNavigation',
+    computed: {
+        isHomeActive() {
+            return this.$route.path === '/'; // Replace '/' with the correct path for your home page
+        },
+        isProgramsActive() {
+            // Replace 'programs' with the correct ID or anchor link of your 'Programs' section
+            return this.$route.hash === '#programs';
+        },
+    },
     data() {
         return {
             appTitle: 'The WIP Initiative',
             drawer: false,
             aboutItems: [
-                { title: 'Our Story' },
-                { title: 'Team' },
-                { title: 'Our Mission' }
+                {
+                    title: 'Our Story',
+                    link: '/about#story'
+                },
+                {
+                    title: 'Our Team',
+                    link: '/about#team'
+                },
+                {
+                    title: 'Our Mission',
+                    link: '/about#mission'
+                }
             ],
             getInvolvedItems: [
                 { title: 'Volunteer' },
@@ -64,8 +85,19 @@ export default {
                 { title: 'Fundraise for Us' }
             ],
         };
-    }
+    },
+    methods: {
+        scrollToPrograms() {
+            const element = document.getElementById('programs');
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        },
+        goToTab(tabIndex) {
+            this.$router.push({ path: `/getinvolved/${tabIndex}` });
+        },
 
+    }
 };
 </script>
 
