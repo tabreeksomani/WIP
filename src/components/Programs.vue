@@ -1,9 +1,8 @@
 <template>
-    <div style="background-color:blanchedalmond">
-        <h2>Upcoming Events</h2>
-
+    <div style="background-color:blanchedalmond" class="main-container">
+        <!-- <h2>Upcoming Events</h2>
+        <h2>Programs</h2> -->
         <div class="card-container">
-            <h2>Our Programs</h2>
 
             <v-card width="344" v-hover="{ classSelector: '.hover-effect' }">
                 <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="200px" cover></v-img>
@@ -127,8 +126,10 @@
                 </v-expand-transition>
             </v-card>
         </div>
-        <upcoming-events></upcoming-events>
 
+        <div class="upcoming-events-container">
+            <upcoming-events></upcoming-events>
+        </div>
     </div>
 </template>
   
@@ -157,6 +158,26 @@ body {
     transition: box-shadow 0.3s;
 }
 
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    /* Adjust the width distribution here (e.g., 3fr and 2fr) */
+    gap: 20px;
+    padding: 10px;
+}
+
+.upcoming-events-container {
+    padding: 10px;
+}
+
+
 .customeLearn {
     background-color: white;
 }
@@ -169,13 +190,10 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.card-container {
-    display: flex;
-    justify-content: right;
-    padding: 15px;
-    margin-left: 30px;
-    margin-right: 30px;
-    height: max-content;
+
+
+.v-card-text {
+    padding: 0;
 }
 
 .v-card {
