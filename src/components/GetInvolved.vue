@@ -20,15 +20,15 @@
                 </p>
                 <a href="/getinvolved/volunteer" class="cta-button">Learn More</a>
             </div>
-
             <div class="get-involved-card">
-                <img src="volunteer-icon.png" alt="Volunteer" />
-                <h3 class="get-involved-title">Volunteer</h3>
+                <img src="partner-icon.png" alt="Partner with Us" />
+                <h3 class="get-involved-title">Partner with Us</h3>
                 <p class="get-involved-description">
-                    Make a difference by contributing your time and skills.
+                    Join us in making a positive impact by becoming a valued partner.
                 </p>
-                <a href="/getinvolved/volunteer" class="cta-button">Learn More</a>
+                <a href="/getinvolved/Partner%20with%20Us" class="cta-button">Learn More</a>
             </div>
+
 
             <div class="get-involved-card">
                 <img src="donate-icon.png" alt="Donate" />
