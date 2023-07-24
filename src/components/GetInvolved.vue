@@ -9,7 +9,7 @@
                 <p class="get-involved-description">
                     Share your expertise and guide others on their journey.
                 </p>
-                <a href="#" class="cta-button">Learn More</a>
+                <a href="/getinvolved/volunteer" class="cta-button">Learn More</a>
             </div>
 
             <div class="get-involved-card">
@@ -18,7 +18,7 @@
                 <p class="get-involved-description">
                     Receive guidance and support from experienced mentors.
                 </p>
-                <a href="#" class="cta-button">Learn More</a>
+                <a href="/getinvolved/volunteer" class="cta-button">Learn More</a>
             </div>
 
             <div class="get-involved-card">
@@ -27,7 +27,7 @@
                 <p class="get-involved-description">
                     Make a difference by contributing your time and skills.
                 </p>
-                <a href="#" class="cta-button">Learn More</a>
+                <a href="/getinvolved/volunteer" class="cta-button">Learn More</a>
             </div>
 
             <div class="get-involved-card">
@@ -36,7 +36,7 @@
                 <p class="get-involved-description">
                     Support our cause by making a financial contribution.
                 </p>
-                <a href="#" class="cta-button">Learn More</a>
+                <a href="/getinvolved/donate" class="cta-button">Learn More</a>
             </div>
 
             <div class="get-involved-card">
@@ -45,7 +45,7 @@
                 <p class="get-involved-description">
                     Partner with us as a sponsor and help us create a positive impact.
                 </p>
-                <a href="#" class="cta-button">Learn More</a>
+                <a href="getinvolved/Sponsor%20Us" class="cta-button">Learn More</a>
             </div>
 
             <div class="get-involved-card">
@@ -54,7 +54,7 @@
                 <p class="get-involved-description">
                     Organize fundraising events and help raise funds for our initiatives.
                 </p>
-                <a href="#" class="cta-button">Learn More</a>
+                <a href="getinvolved/Fundraise%20for%20Us" class="cta-button">Learn More</a>
             </div>
         </div>
 
