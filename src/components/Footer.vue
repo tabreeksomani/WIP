@@ -1,13 +1,13 @@
 <template>
   <v-app>
-    <v-footer class="footer" style="background-color: #A30B37;">
+    <v-footer class="footer" style="background-color: #A30B37; color:antiquewhite">
       <v-row align="center" justify="center">
         <v-col cols="auto">
           <h2 class="logo-text">Company Name</h2>
         </v-col>
         <v-col cols="auto">
           <h4 class="text-center">Company</h4>
-          <v-list dense>
+          <v-list style="background-color: #A30B37; color:antiquewhite">
             <v-list-item v-for="(item, index) in companyLinks" :key="index" link>
               <v-list-item-title class="link-text">{{ item.title }}</v-list-item-title>
             </v-list-item>
@@ -15,7 +15,7 @@
         </v-col>
         <v-col cols="auto">
           <h4 class="text-center">About</h4>
-          <v-list dense>
+          <v-list style="background-color: #A30B37; color:antiquewhite">
             <v-list-item v-for="(item, index) in aboutLinks" :key="index" link>
               <v-list-item-title class="link-text">{{ item.title }}</v-list-item-title>
             </v-list-item>
@@ -23,7 +23,7 @@
         </v-col>
         <v-col cols="auto">
           <h4 class="text-center">Get Involved</h4>
-          <v-list dense>
+          <v-list style="background-color: #A30B37; color:antiquewhite">
             <v-list-item v-for="(item, index) in involvedLinks" :key="index" link>
               <v-list-item-title class="link-text">{{ item.title }}</v-list-item-title>
             </v-list-item>
@@ -31,7 +31,7 @@
         </v-col>
         <v-col cols="auto">
           <h4 class="text-center">Connect</h4>
-          <v-list dense>
+          <v-list style="background-color: #A30B37; color:antiquewhite">
             <v-list-item link>
               <v-list-item-title class="link-text" @click="goToFAQ">FAQ</v-list-item-title>
             </v-list-item>
@@ -93,7 +93,7 @@
 .copyright {
   margin-top: -250px;
   font-size: 12px;
-  color: #999;
+  color: antiquewhite;
 }
 </style>
 
