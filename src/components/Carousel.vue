@@ -1,16 +1,22 @@
 <template>
-    <v-carousel show-arrows="hover">
-        <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" cover></v-carousel-item>
+    <v-carousel show-arrows="false" hide-delimiters="">
+        <v-carousel-item src="/progress.png" contain></v-carousel-item>
 
-        <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg" cover></v-carousel-item>
 
-        <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" cover></v-carousel-item>
     </v-carousel>
 </template>
 
 <script>
+import BASE_URL from '../../jsconfig.json';
+
 export default {
-    name: 'FeatureCarousel'
+
+    name: 'FeatureCarousel',
+    data() {
+        return {
+            imageURL: BASE_URL + 'progress.png'
+        }
+    }
 };
 </script>
 
