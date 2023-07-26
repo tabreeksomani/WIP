@@ -30,7 +30,7 @@ export default {
 
 .impact-section {
     background-color: #f7f7f7;
-    padding: 40px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -38,7 +38,7 @@ export default {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .stats {
