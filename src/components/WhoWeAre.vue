@@ -24,12 +24,12 @@
                     sit amet turpis rutrum lacinia. Sed id lacus a elit iaculis rhoncus.
                 </p>
                 <div class="buttons">
-                    <a href="/our-story" class="btn">Our Story</a>
-                    <a href="/our-team" class="btn">Our Team</a>
+                    <a href="/about#our-story" class="btn">Our Story</a>
+                    <a href="/about#our-team" class="btn">Our Team</a>
                 </div>
             </div>
             <div class="image">
-                <img src="your-image-path.jpg" alt="Who We Are Image" class="who-we-are-image" />
+                <img src="/girlboss.png" alt="Who We Are Image" class="who-we-are-image" />
             </div>
         </div>
     </div>
@@ -43,18 +43,22 @@
     background-color: #f7f7f7;
 }
 
+.heading {
+    margin-bottom: 40px;
+}
+
 .section-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .sub-heading {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .content {
@@ -86,7 +90,7 @@
 }
 
 .buttons {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .btn {
@@ -104,11 +108,11 @@
 .image {
     width: 50%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .who-we-are-image {
-    max-width: 100%;
-    height: auto;
+    max-height: 400px;
+    max-width: auto;
 }
 </style>
