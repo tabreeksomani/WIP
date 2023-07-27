@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-tabs v-model="activeTab" grow>
-            <v-tab v-for="(item, index) in tabs" :key="index">{{ item.title }}</v-tab>
+            <v-tab v-for="(item, index) in tabs" :key="index" @click=goToTab(item.href)>{{ item.title }}</v-tab>
         </v-tabs>
 
         <v-tabs-items v-model="activeTab">
@@ -128,29 +128,31 @@ export default {
     data() {
         return {
             tabs: [
-                { title: 'Volunteer', content: 'Content for Volunteer tab' },
-                { title: 'Donate', content: 'Content for Donate tab' },
-                { title: 'Sponsor Us', content: 'Content for Sponsor Us tab' },
-                { title: 'Partner with Us', content: 'Content for Partner with Us tab' },
-                { title: 'Fundraise for Us', content: 'Content for Fundraise for Us tab' },
+                { title: 'Volunteer', content: 'Content for Volunteer tab', href: '#volunteer' },
+                { title: 'Donate', content: 'Content for Donate tab', href: '#donate' },
+                { title: 'Sponsor Us', content: 'Content for Sponsor Us tab', href: '#sponsor' },
+                { title: 'Partner with Us', content: 'Content for Partner with Us tab', href: '#partner' },
+                { title: 'Fundraise for Us', content: 'Content for Fundraise for Us tab', href: '#fundraise' },
             ],
             activeTab: 0, // Set the initial active tab index
         };
     },
-    created() {
-        // Get the active tab from the route parameters
-        this.updateActiveTabFromRoute();
-    },
+
     watch: {
-        // Watch for route changes and update the activeTab when "tab" parameter changes
-        '$route.params.tab': 'updateActiveTabFromRoute',
+        // Watch for hash changes and update the active tab accordingly
+        "$route.hash": "updateActiveTabFromHash",
+
     },
+
     methods: {
-        updateActiveTabFromRoute() {
+        goToTab(tabIndex) {
+            this.$router.push({ path: '/getinvolved', hash: tabIndex });
+        },
+        updateActiveTabFromHash() {
             if (this.$route.path === '/getinvolved') {
 
-                const tabTitle = this.$route.params.tab;
-                const foundTab = this.tabs.find((tab) => tab.title.toLowerCase() === tabTitle.toLowerCase());
+                const hash = this.$route.hash;
+                const foundTab = this.tabs.find((tab) => tab.href.toLowerCase() === hash.toLowerCase());
                 this.activeTab = foundTab ? this.tabs.indexOf(foundTab) : 0;
             }
         },

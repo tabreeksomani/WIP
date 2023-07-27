@@ -1,24 +1,26 @@
 <template>
     <div class="get-involved-section" style="background-color: #FFF5E6;">
-        <h2 class="section-title">Get Involved</h2>
+        <h2 class="section-title">Empowerment Through Action</h2>
 
-        Get Involved and Empower Women Leaders! Join our movement for women empowerment and nurturing the next generation of
+
+
+        <b>Get Involved and Empower Women Leaders!</b> Join our movement for women empowerment and nurturing the next
+        generation of
         female leaders. Explore opportunities to volunteer, become a valued partner, donate, sponsor, or organize
         fundraising events. Together, we can ignite change and foster a world where women thrive and lead with strength and
         compassion.
 
 
 
-
-
         <div class="get-involved-grid">
+
             <div class="get-involved-card">
                 <svg-icon type="mdi" :path="volunteer" size="100"></svg-icon>
                 <h3 class="get-involved-title">Join Our Team</h3>
                 <p class="get-involved-description">
                     Become a mentor, lead a workshop, or explore volunteering opportunities with our operations team!
                 </p>
-                <a href="/getinvolved/volunteer" class="cta-button">Learn More</a>
+                <a href="/getinvolved#volunteer" class="cta-button">Learn More</a>
             </div>
 
             <div class="get-involved-card">
@@ -26,7 +28,7 @@
                 <h3 class="get-involved-title">Partner with Us</h3>
                 <p class="get-involved-description">
                     Join forces with us as a valued partner and help us make a lasting impact in communities. </p>
-                <a href="/getinvolved/Partner%20with%20Us" class="cta-button">Learn More</a>
+                <a href="/getinvolved#partner" class="cta-button">Learn More</a>
             </div>
 
 
@@ -35,7 +37,7 @@
                 <h3 class="get-involved-title">Donate</h3>
                 <p class="get-involved-description">
                     Make a meaningful impact and support our cause by making a financial contribution. </p>
-                <a href="/getinvolved/donate" class="cta-button">Learn More</a>
+                <a href="/getinvolved#donate" class="cta-button">Learn More</a>
             </div>
 
             <div class="get-involved-card">
@@ -44,7 +46,7 @@
                 <p class="get-involved-description">
                     Empower positive change as a sponsor and partner with us to make a significant impact in the lives of
                     those we serve. </p>
-                <a href="getinvolved/Sponsor%20Us" class="cta-button">Learn More</a>
+                <a href="getinvolved#sponsor" class="cta-button">Learn More</a>
             </div>
 
             <div class="get-involved-card">
@@ -53,7 +55,7 @@
                 <p class="get-involved-description">
                     Become a catalyst for change by organizing fundraising events and helping us raise vital funds for our
                     initiatives. </p>
-                <a href="getinvolved/Fundraise%20for%20Us" class="cta-button">Learn More</a>
+                <a href="getinvolved#fundraise" class="cta-button">Learn More</a>
             </div>
         </div>
 
@@ -85,18 +87,31 @@ export default {
 <style scoped>
 .get-involved-section {
     font: montserrat;
-
     padding: 40px;
+
+    color: #2E4052;
+
     text-align: center;
 }
 
 .section-title {
+    width: 100%;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+    background-color: #A30B37;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 8px;
+
 }
 
 .get-involved-grid {
+
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -149,7 +164,8 @@ export default {
 }
 
 .cta-button:hover {
-    background-color: darkblue;
+    background-color: #2E4052;
+
 }
 
 .newsletter-section {
@@ -194,5 +210,15 @@ export default {
 
 .newsletter-form button:hover {
     background-color: darkblue;
+}
+
+.get-involved-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #F5DEB3;
+    border-radius: 8px;
 }
 </style>

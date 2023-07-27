@@ -33,7 +33,7 @@
                 </template>
                 <v-list>
                     <v-list-item v-for="(item, index) in getInvolvedItems" :key="index" :value="index"
-                        @click=goToTab(item.title)>
+                        @click=goToTab(item.href)>
                         <v-list-item-title>{{ item.title }}</v-list-item-title>
                     </v-list-item>
                 </v-list>
@@ -78,11 +78,11 @@ export default {
                 }
             ],
             getInvolvedItems: [
-                { title: 'Volunteer' },
-                { title: 'Donate' },
-                { title: 'Sponsor Us' },
-                { title: 'Partner with Us' },
-                { title: 'Fundraise for Us' }
+                { title: 'Volunteer', href: '#volunteer' },
+                { title: 'Donate', href: '#donate' },
+                { title: 'Sponsor Us', href: '#sponsor' },
+                { title: 'Partner with Us', href: '#partner' },
+                { title: 'Fundraise for Us', href: '#fundraise' }
             ],
         };
     },
@@ -94,7 +94,7 @@ export default {
             }
         },
         goToTab(tabIndex) {
-            this.$router.push({ path: `/getinvolved/${tabIndex}` });
+            this.$router.push({ path: '/getinvolved', hash: tabIndex });
         },
 
     }

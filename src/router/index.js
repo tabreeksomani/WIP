@@ -28,7 +28,6 @@ const routes = [
         name: "blog",
         component: BlogPage,
     },
-    { path: '/getinvolved/:tab', component: GetInvolved },
     { path: '/getinvolved', component: GetInvolved },
     {
         path: "/",
