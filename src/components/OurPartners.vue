@@ -14,9 +14,9 @@ export default {
     data() {
         return {
             partners: [
-                { logo: 'partner1.png' },
-                { logo: 'partner2.png' },
-                { logo: 'partner3.png' },
+                { logo: '/ubc.png' },
+                { logo: '/toast.png' },
+                { logo: '/microsoft.jpg' },
                 // Add more partner objects with their logo paths
             ],
         };
@@ -43,6 +43,7 @@ export default {
 .partner-logo {
     max-width: 150px;
     max-height: 80px;
+    min-height: 10px;
     margin: 10px;
 }
 </style>
