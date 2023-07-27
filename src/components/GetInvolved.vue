@@ -2,7 +2,14 @@
     <div class="get-involved-section" style="background-color: #FFF5E6;">
         <h2 class="section-title">Get Involved</h2>
 
-        <p>Lorem ipusm</p>
+        Get Involved and Empower Women Leaders! Join our movement for women empowerment and nurturing the next generation of
+        female leaders. Explore opportunities to volunteer, become a valued partner, donate, sponsor, or organize
+        fundraising events. Together, we can ignite change and foster a world where women thrive and lead with strength and
+        compassion.
+
+
+
+
 
         <div class="get-involved-grid">
             <div class="get-involved-card">
@@ -18,8 +25,7 @@
                 <svg-icon type="mdi" :path="partner" size="100"></svg-icon>
                 <h3 class="get-involved-title">Partner with Us</h3>
                 <p class="get-involved-description">
-                    Join us in making a positive impact by becoming a valued partner.
-                </p>
+                    Join forces with us as a valued partner and help us make a lasting impact in communities. </p>
                 <a href="/getinvolved/Partner%20with%20Us" class="cta-button">Learn More</a>
             </div>
 
@@ -28,8 +34,7 @@
                 <svg-icon type="mdi" :path="donate" size="100"></svg-icon>
                 <h3 class="get-involved-title">Donate</h3>
                 <p class="get-involved-description">
-                    Support our cause by making a financial contribution.
-                </p>
+                    Make a meaningful impact and support our cause by making a financial contribution. </p>
                 <a href="/getinvolved/donate" class="cta-button">Learn More</a>
             </div>
 
@@ -37,8 +42,8 @@
                 <svg-icon type="mdi" :path="sponsor" size="100"></svg-icon>
                 <h3 class="get-involved-title">Sponsor</h3>
                 <p class="get-involved-description">
-                    Partner with us as a sponsor and help us create a positive impact.
-                </p>
+                    Empower positive change as a sponsor and partner with us to make a significant impact in the lives of
+                    those we serve. </p>
                 <a href="getinvolved/Sponsor%20Us" class="cta-button">Learn More</a>
             </div>
 
@@ -46,8 +51,8 @@
                 <svg-icon type="mdi" :path="fundraise" size="100"></svg-icon>
                 <h3 class="get-involved-title">Fundraise for Us</h3>
                 <p class="get-involved-description">
-                    Organize fundraising events and help raise funds for our initiatives.
-                </p>
+                    Become a catalyst for change by organizing fundraising events and helping us raise vital funds for our
+                    initiatives. </p>
                 <a href="getinvolved/Fundraise%20for%20Us" class="cta-button">Learn More</a>
             </div>
         </div>
@@ -79,6 +84,8 @@ export default {
   
 <style scoped>
 .get-involved-section {
+    font: montserrat;
+
     padding: 40px;
     text-align: center;
 }
@@ -90,6 +97,7 @@ export default {
 }
 
 .get-involved-grid {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 20px;
@@ -97,6 +105,8 @@ export default {
 
 .get-involved-card {
     background-color: #ffffff;
+    height: 350px;
+    position: relative;
     border: 1px solid #ccc;
     color: #2E4052;
     border-radius: 8px;
@@ -123,6 +133,10 @@ export default {
 }
 
 .cta-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: inline-block;
     margin-top: 10px;
     padding: 8px 16px;
@@ -131,6 +145,7 @@ export default {
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+
 }
 
 .cta-button:hover {
