@@ -2,26 +2,20 @@
     <div class="get-involved-section" style="background-color: #FFF5E6;">
         <h2 class="section-title">Get Involved</h2>
 
+        <p>Lorem ipusm</p>
+
         <div class="get-involved-grid">
             <div class="get-involved-card">
-                <svg-icon type="mdi" :path="path" size="100"></svg-icon>
-                <h3 class="get-involved-title">Become a Mentor</h3>
+                <svg-icon type="mdi" :path="volunteer" size="100"></svg-icon>
+                <h3 class="get-involved-title">Join Our Team</h3>
                 <p class="get-involved-description">
-                    Share your expertise and guide others on their journey.
+                    Become a mentor, lead a workshop, or explore volunteering opportunities with our operations team!
                 </p>
                 <a href="/getinvolved/volunteer" class="cta-button">Learn More</a>
             </div>
 
             <div class="get-involved-card">
-                <img src="mentee-icon.png" alt="Become a Mentee" />
-                <h3 class="get-involved-title">Lead a Workshop</h3>
-                <p class="get-involved-description">
-                    Receive guidance and support from experienced mentors.
-                </p>
-                <a href="/getinvolved/volunteer" class="cta-button">Learn More</a>
-            </div>
-            <div class="get-involved-card">
-                <img src="partner-icon.png" alt="Partner with Us" />
+                <svg-icon type="mdi" :path="partner" size="100"></svg-icon>
                 <h3 class="get-involved-title">Partner with Us</h3>
                 <p class="get-involved-description">
                     Join us in making a positive impact by becoming a valued partner.
@@ -31,7 +25,7 @@
 
 
             <div class="get-involved-card">
-                <img src="donate-icon.png" alt="Donate" />
+                <svg-icon type="mdi" :path="donate" size="100"></svg-icon>
                 <h3 class="get-involved-title">Donate</h3>
                 <p class="get-involved-description">
                     Support our cause by making a financial contribution.
@@ -40,7 +34,7 @@
             </div>
 
             <div class="get-involved-card">
-                <img src="sponsor-icon.png" alt="Sponsor" />
+                <svg-icon type="mdi" :path="sponsor" size="100"></svg-icon>
                 <h3 class="get-involved-title">Sponsor</h3>
                 <p class="get-involved-description">
                     Partner with us as a sponsor and help us create a positive impact.
@@ -49,7 +43,7 @@
             </div>
 
             <div class="get-involved-card">
-                <img src="fundraise-icon.png" alt="Fundraise for Us" />
+                <svg-icon type="mdi" :path="fundraise" size="100"></svg-icon>
                 <h3 class="get-involved-title">Fundraise for Us</h3>
                 <p class="get-involved-description">
                     Organize fundraising events and help raise funds for our initiatives.
@@ -63,7 +57,7 @@
 
 <script>
 import SvgIcon from '@jamescoyle/vue-icon';
-import { mdiAccountTieWoman } from '@mdi/js';
+import { mdiAccountTieWoman, mdiHandshake, mdiAccountGroup, mdiCharity, mdiHandCoin } from '@mdi/js';
 
 export default {
     name: "GetInvolved",
@@ -72,7 +66,11 @@ export default {
     },
     data() {
         return {
-            path: mdiAccountTieWoman,
+            volunteer: mdiAccountTieWoman,
+            partner: mdiHandshake,
+            donate: mdiCharity,
+            sponsor: mdiAccountGroup,
+            fundraise: mdiHandCoin
         }
     }
 }
@@ -93,7 +91,7 @@ export default {
 
 .get-involved-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 20px;
 }
 
