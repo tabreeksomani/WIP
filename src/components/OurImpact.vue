@@ -29,7 +29,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .impact-section {
-    background-color: #f7f7f7;
+    background-color: rgb(254 253 234);
     padding: 10px 0;
     text-align: center;
 }
