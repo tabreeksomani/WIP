@@ -16,7 +16,9 @@ export default {
             partners: [
                 { logo: '/ubc.png' },
                 { logo: '/toast.png' },
-                { logo: '/microsoft.jpg' },
+                { logo: '/microsoft.png' },
+                { logo: '/amazon.png' },
+
                 // Add more partner objects with their logo paths
             ],
         };
@@ -31,7 +33,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f7f7f7;
+    background-color: #DEFFFC;
 }
 
 .partner-logos {
@@ -41,8 +43,7 @@ export default {
 }
 
 .partner-logo {
-    max-width: 150px;
-    max-height: 80px;
+    max-height: 40px;
     min-height: 10px;
     margin: 10px;
 }

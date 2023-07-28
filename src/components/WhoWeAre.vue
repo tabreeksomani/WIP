@@ -7,25 +7,39 @@
             <div class="text">
                 <h4 class="sub-heading">Our Mission</h4>
                 <p class="paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                    consectetur massa nec enim pulvinar ullamcorper. Suspendisse et magna
-                    sit amet turpis rutrum lacinia. Sed id lacus a elit iaculis rhoncus.
+                    At The WIP Initiative, we are on a powerful mission to inspire and uplift women on their journeys to
+                    achieving their
+                    full potential. We are dedicated to breaking down systemic and internal barriers that have hindered the
+                    progress of women for far too long.
+
+
                 </p>
                 <h4 class="sub-heading">Our Values</h4>
                 <ul class="values-list">
-                    <li>Value 1: Lorem ipsum dolor sit amet</li>
-                    <li>Value 2: Consectetur adipiscing elit</li>
-                    <li>Value 3: Aenean consectetur massa nec enim pulvinar</li>
+                    <li>Inspiration: Motivating and encouraging women to overcome obstacles, set ambitious goals, and pursue
+                        their passions. </li>
+                    <li>Empowerment: Providing women with the tools, resources, and support they need to realize their full
+                        potential.</li>
+                    <li>Collaboration: fostering an inclusive and supportive environment, encouraging women to work
+                        together, share knowledge and experiences, and build strong networks. </li>
                 </ul>
-                <h4 class="sub-heading">Our Vision</h4>
+                <h4 class="sub-heading">Our Vision:</h4>
                 <p class="paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                    consectetur massa nec enim pulvinar ullamcorper. Suspendisse et magna
-                    sit amet turpis rutrum lacinia. Sed id lacus a elit iaculis rhoncus.
+                    <!-- Through our diverse and inclusive community, we aim to foster an environment that
+                    celebrates women's achievements and encourages collaboration, mentorship, and skill development. By
+                    breaking down societal barriers and promoting gender equality, we envision a world where women have
+                    equal opportunities to lead and contribute to positive change on a global scale. Through our advocacy,
+                    education, and empowerment initiatives, we strive to create a lasting legacy of empowered women who
+                    inspire, innovate, and drive progress in all spheres of life. -->
+                    To Empower the Next Generation of Women Leaders.
+
+
+
+
                 </p>
                 <div class="buttons">
-                    <a href="/about#our-story" class="btn">Our Story</a>
-                    <a href="/about#our-team" class="btn">Our Team</a>
+                    <a href="/about#our-story" class="cta-button">Our Story</a>
+                    <a href="/about#our-team" class="cta-button">Our Team</a>
                 </div>
             </div>
             <div class="image">
@@ -35,23 +49,24 @@
     </div>
 </template>
   
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .who-we-are-section {
     padding: 40px;
-    background-color: #f7f7f7;
+    background-color: #DEFFFC;
 }
 
 .heading {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .section-title {
     font-family: 'Montserrat', sans-serif;
+    color: #A30B37;
     font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 40px;
+    font-size: 40px !important;
+    margin-bottom: 0;
 }
 
 .sub-heading {
@@ -103,6 +118,23 @@
     font-size: 16px;
     border-radius: 4px;
     margin-right: 10px;
+}
+
+
+.cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color: #A30B37;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2E4052;
 }
 
 .image {
