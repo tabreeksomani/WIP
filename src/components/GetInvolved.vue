@@ -1,5 +1,5 @@
 <template>
-    <div class="get-involved-section" style="background-color: #FFF5E6;">
+    <div class="get-involved-section" style="background-color: rgb(254 253 234);">
         <h2 class="section-title">Empowerment Through Action</h2>
 
         <b>Get Involved and Empower Women Leaders!</b> Join our movement for women empowerment and nurturing the next
@@ -31,8 +31,8 @@ export default {
         return {
             getInvolvedItems: [
                 { title: 'Join Our Team', icon: mdiAccountTieWoman, description: 'Become a mentor, lead a workshop, or explore volunteering opportunities with our operations team!', href: '/getinvolved#volunteer' },
-                { title: 'Partner with Us', icon: mdiHandshake, description: 'Join forces with us as a valued partner and help us make a lasting impact in communities.', href: '/getinvolved#partner' },
                 { title: 'Donate', icon: mdiCharity, description: 'Make a meaningful impact and support our cause by making a financial contribution.', href: '/getinvolved#donate' },
+                { title: 'Partner with Us', icon: mdiHandshake, description: 'Join forces with us as a valued partner and help us make a lasting impact in communities.', href: '/getinvolved#partner' },
                 { title: 'Sponsor', icon: mdiAccountGroup, description: 'Empower positive change as a sponsor and partner with us to make a significant impact in the lives of those we serve.', href: '/getinvolved#sponsor' },
                 { title: 'Fundraise for Us', icon: mdiHandCoin, description: 'Become a catalyst for change by organizing fundraising events and helping us raise vital funds for our initiatives.', href: '/getinvolved#fundraise' },
             ],
@@ -51,7 +51,7 @@ export default {
 
 .section-title {
     width: 100%;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
     font-size: 28px;
@@ -74,7 +74,7 @@ export default {
 
 .get-involved-card {
     background-color: #ffffff;
-    height: 350px;
+    height: 360px;
     position: relative;
     border: 1px solid #ccc;
     color: #2E4052;
@@ -82,6 +82,14 @@ export default {
     padding: 20px;
     text-align: center;
     cursor: pointer;
+    transition: transform 0.3s ease;
+    /* Add the transition property */
+
+}
+
+.get-involved-card:hover {
+    transform: scale(1.08);
+    /* Apply the zoom effect on hover */
 }
 
 .get-involved-title {
