@@ -9,7 +9,7 @@
     <our-programs id="programs"></our-programs>
     <featured-content></featured-content>
     <get-involved></get-involved>
-    <membership-section></membership-section>
+    <membership-section id="membership"></membership-section>
 </template>
   
 <script>
@@ -23,6 +23,7 @@ import OurImpact from '../components/OurImpact.vue';
 import FeaturedContent from '../components/FeaturedContent.vue';
 import GetInvolved from '../components/GetInvolved.vue';
 import MembershipSection from '../components/Membership.vue'
+
 
 export default {
     name: 'HomePage',

@@ -4,6 +4,7 @@
             <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
             <v-spacer class="hidden-md-and-up"></v-spacer>
             <v-toolbar-title>
+                <img class="mr-3" src="/girl.png" height="25" />
                 {{ appTitle }}
             </v-toolbar-title>
             <v-btn flat class="hidden-sm-and-down" to="/">Home</v-btn>
@@ -42,7 +43,7 @@
 
             <v-spacer class="hidden-sm-and-down"></v-spacer>
 
-            <v-btn class="custom-btn">Join Our Community</v-btn>
+            <v-btn class="custom-btn" to="/#membership"><b>Join Our Community</b></v-btn>
         </v-toolbar>
     </span>
 </template>
@@ -87,14 +88,8 @@ export default {
         };
     },
     methods: {
-        scrollToPrograms() {
-            const element = document.getElementById('programs');
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
-        },
-        goToTab(tabIndex) {
-            this.$router.push({ path: '/getinvolved', hash: tabIndex });
+        goToTab(tabhref) {
+            this.$router.push({ path: '/getinvolved', hash: tabhref });
         },
 
     }
