@@ -1,10 +1,12 @@
 <template>
-  <app-navigation></app-navigation>
+  <v-app>
+    <app-navigation></app-navigation>
 
 
-  <router-view></router-view>
+    <router-view></router-view>
 
-  <page-footer></page-footer>
+    <page-footer></page-footer>
+  </v-app>
 </template>
 
 <script>
