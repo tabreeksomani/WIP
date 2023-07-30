@@ -4,8 +4,12 @@
             <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
             <v-spacer class="hidden-md-and-up"></v-spacer>
             <v-toolbar-title>
-                <img class="mr-3" src="/girl.png" height="25" />
-                {{ appTitle }}
+
+                <div class="subtext">
+
+                    <img src="/girl.png" height="25" />
+                    Women in Progress
+                </div>
             </v-toolbar-title>
             <v-btn flat class="hidden-sm-and-down" to="/">Home</v-btn>
             <v-menu>
@@ -102,6 +106,29 @@ export default {
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
+
+.mr-3 {
+    margin: 0px;
+}
+
+.subtext {
+    font-size: 15px;
+    color: white;
+    /* Fancy color */
+    font-weight: bold;
+    /* Fancy font weight */
+    font-family: "Helvetica Neue", sans-serif;
+    /* Fancy font family */
+    text-transform: uppercase;
+    /* Uppercase the text */
+    letter-spacing: 2px;
+    /* Add some letter spacing */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    /* Add a subtle text shadow */
+    animation: pulse 2s infinite;
+    /* Add a pulse animation */
+}
+
 
 .custom-btn {
     background-color: #FFF5E6;
