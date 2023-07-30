@@ -1,5 +1,5 @@
 <template>
-    <feature-carousel></feature-carousel>
+    <feature-carousel id="home"></feature-carousel>
     <our-impact></our-impact>
     <WhoWeAre></WhoWeAre>
     <our-partners></our-partners>
