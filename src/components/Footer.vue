@@ -57,7 +57,7 @@
   </v-app>
 </template>
 
-<style>
+<style scoped>
 .link-text {
   background-color: transparent !important;
 }
@@ -68,7 +68,7 @@
 }
 
 .footer {
-  height: 10%;
+  padding-top: 20px;
 }
 
 .footer-bottom {
@@ -76,6 +76,7 @@
   bottom: 0;
   width: 100%;
   margin-top: 10px;
+  margin-bottom: 0px;
   /* Adjust the margin as per your preference */
 }
 
@@ -93,6 +94,10 @@
 .copyright {
   margin-top: -250px;
   font-size: 12px;
+  background-color: #A30B37;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 0px;
   color: antiquewhite;
 }
 </style>
@@ -103,19 +108,22 @@ export default {
   data() {
     return {
       companyLinks: [
-        { title: 'Home', url: '/home' },
-        { title: 'Services', url: '/services' },
-        { title: 'Careers', url: '/careers' },
+        { title: 'Home', url: '/#home' },
+        { title: 'Programs', url: '/#programs' },
+        { title: 'Join Our Community', url: '/#membership' },
       ],
       aboutLinks: [
-        { title: 'About Us', url: '/about' },
-        { title: 'Our Team', url: '/team' },
-        { title: 'Testimonials', url: '/testimonials' },
+        { title: 'Our Mission', url: '/about#mission' },
+        { title: 'Our Story', url: '/about#story' },
+        { title: 'Our Team', url: '/about#team' },
       ],
       involvedLinks: [
-        { title: 'Volunteer', url: '/volunteer' },
-        { title: 'Donate', url: '/donate' },
-        { title: 'Events', url: '/events' },
+        { title: 'Volunteer', url: '/getinvolved#volunteer' },
+        { title: 'Donate', url: '/getinvolved#donate' },
+        { title: 'Sponsor Us', url: '/getinvolved#sponsor' },
+        { title: 'Partner with Us', url: '/getinvolved#partner' },
+        { title: 'Fundraise for Us', url: '/getinvolved#fundraise' },
+
       ],
       connectLinks: [
         { icon: 'mdi-facebook', url: 'https://www.facebook.com' },
