@@ -25,7 +25,7 @@
                 </v-list>
             </v-menu>
 
-            <v-btn flat to="/#programs" class="hidden-sm-and-down">Programs</v-btn>
+            <v-btn flat @click="goToPage('/#programs')" class="hidden-sm-and-down">Programs</v-btn>
 
             <v-btn flat class="hidden-sm-and-down" to="/podcast">Podcast</v-btn>
             <v-btn flat class="hidden-sm-and-down" to="/blog">Blog</v-btn>
@@ -47,7 +47,7 @@
 
             <v-spacer class="hidden-sm-and-down"></v-spacer>
 
-            <v-btn class="custom-btn" to="/#membership"><b>Join Our Community</b></v-btn>
+            <v-btn class="custom-btn" @click="goToPage('/#membership')"><b>Join Our Community</b></v-btn>
         </v-toolbar>
     </span>
 </template>
@@ -92,6 +92,9 @@ export default {
         };
     },
     methods: {
+        goToPage(url) {
+            this.$router.push(url);
+        },
         goToTab(tabhref) {
             this.$router.push({ path: '/getinvolved', hash: tabhref });
         },
