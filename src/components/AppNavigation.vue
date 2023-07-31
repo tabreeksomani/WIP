@@ -7,7 +7,7 @@
 
                 <div class="subtext">
 
-                    <img src="/girl.png" height="25" />
+                    <img src="girl.png" height="25" />
                     Women in Progress
                 </div>
             </v-toolbar-title>

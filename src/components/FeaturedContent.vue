@@ -217,7 +217,7 @@ export default {
                     title: "Networking 101: Mastering Communication at Conferences",
                     excerpt: "How to make conversation with strangers in awkward situations",
                     url: "https://www.example.com/blog-post-1",
-                    thumbnail: '/coffee.jpeg'
+                    thumbnail: 'coffee.jpeg'
                 },
                 {
                     id: 2,
@@ -225,7 +225,7 @@ export default {
                     excerpt:
                         "How to gain confidence to speak at conferences even if you're just starting out",
                     url: "https://www.example.com/blog-post-2",
-                    thumbnail: '/question.png'
+                    thumbnail: 'question.png'
                 },
                 // Add more blog posts as needed
             ],

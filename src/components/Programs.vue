@@ -40,7 +40,7 @@ export default {
                 title: "Dear Ally",
                 excerpt: "How to make conversation with strangers in awkward situations",
                 url: "https://www.example.com/blog-post-1",
-                thumbnail: '/coffee.jpeg'
+                thumbnail: 'coffee.jpeg'
             },
             {
                 id: 2,
@@ -48,7 +48,7 @@ export default {
                 excerpt:
                     "How to gain confidence to speak at conferences even if you're just starting out",
                 url: "https://www.example.com/blog-post-2",
-                thumbnail: '/question.png'
+                thumbnail: 'question.png'
             },
             {
                 id: 3,
@@ -56,7 +56,7 @@ export default {
                 excerpt:
                     "How to gain confidence to speak at conferences even if you're just starting out",
                 url: "https://www.example.com/blog-post-2",
-                thumbnail: '/question.png'
+                thumbnail: 'question.png'
             },
             {
                 id: 4,
@@ -64,7 +64,7 @@ export default {
                 excerpt:
                     "How to gain confidence to speak at conferences even if you're just starting out",
                 url: "https://www.example.com/blog-post-2",
-                thumbnail: '/question.png'
+                thumbnail: 'question.png'
             },
             // Add more blog posts as needed
         ],

@@ -1,6 +1,6 @@
 <template>
     <v-carousel :show-arrows="false" hide-delimiters style="background-color: rgb(254 253 234);">
-        <v-carousel-item src="/progress.png" contain></v-carousel-item>
+        <v-carousel-item src="progress.png" contain></v-carousel-item>
 
 
     </v-carousel>
