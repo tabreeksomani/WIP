@@ -1,60 +1,61 @@
 <template>
-  <v-app>
-    <v-footer class="footer" style="background-color: #A30B37; color:antiquewhite">
-      <v-row align="center" justify="center">
-        <v-col cols="auto">
-          <h2 class="logo-text">Company Name</h2>
-        </v-col>
-        <v-col cols="auto">
-          <h4 class="text-center">Company</h4>
-          <v-list style="background-color: #A30B37; color:antiquewhite">
-            <v-list-item v-for="(item, index) in companyLinks" :key="index" link>
-              <v-list-item-title class="link-text">{{ item.title }}</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-col>
-        <v-col cols="auto">
-          <h4 class="text-center">About</h4>
-          <v-list style="background-color: #A30B37; color:antiquewhite">
-            <v-list-item v-for="(item, index) in aboutLinks" :key="index" link>
-              <v-list-item-title class="link-text">{{ item.title }}</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-col>
-        <v-col cols="auto">
-          <h4 class="text-center">Get Involved</h4>
-          <v-list style="background-color: #A30B37; color:antiquewhite">
-            <v-list-item v-for="(item, index) in involvedLinks" :key="index" link>
-              <v-list-item-title class="link-text">{{ item.title }}</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-col>
-        <v-col cols="auto">
-          <h4 class="text-center">Connect</h4>
-          <v-list style="background-color: #A30B37; color:antiquewhite">
-            <v-list-item link>
-              <v-list-item-title class="link-text" @click="goToFAQ">FAQ</v-list-item-title>
-            </v-list-item>
-            <v-list-item link>
-              <v-list-item-title class="link-text" @click="goToContact">Contact Us</v-list-item-title>
-            </v-list-item>
-            <div class="social-icons">
-              <v-btn v-for="(item, index) in connectLinks" :key="index" :href="item.url" icon>
-                <v-icon>{{ item.icon }}</v-icon>
-              </v-btn>
-            </div>
-          </v-list>
-        </v-col>
-      </v-row>
-      <v-row class="footer-bottom" justify="center" align="center">
-        <v-col cols="auto">
-          <div class="text-center copyright">
-            &copy; {{ currentYear }} Company Name. All rights reserved.
+  <v-footer class="footer" style="background-color: #A30B37; color:antiquewhite">
+    <v-row align="center" justify="center">
+      <v-col cols="auto">
+        <h2 class="logo-text">The WIP Initiative</h2>
+      </v-col>
+      <v-col cols="auto">
+        <h4 class="text-center">Women in Progress</h4>
+        <v-list style="background-color: #A30B37; color:antiquewhite">
+          <v-list-item v-for="(item, index) in companyLinks" :key="index" link class="text-center"
+            @click="goToPage(item.url)">
+            <v-list-item-title class="link-text">{{ item.title }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-col>
+      <v-col cols="auto">
+        <h4 class="text-center">About</h4>
+        <v-list style="background-color: #A30B37; color:antiquewhite">
+          <v-list-item v-for="(item, index) in aboutLinks" :key="index" link class="text-center"
+            @click="goToPage(item.url)">
+            <v-list-item-title class="link-text">{{ item.title }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-col>
+      <v-col cols="auto">
+        <h4 class="text-center">Get Involved</h4>
+        <v-list style="background-color: #A30B37; color:antiquewhite">
+          <v-list-item v-for="(item, index) in involvedLinks" :key="index" link class="text-center"
+            @click="goToPage(item.url)">
+            <v-list-item-title class="link-text">{{ item.title }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-col>
+      <v-col cols="auto">
+        <h4 class="text-center">Connect</h4>
+        <v-list style="background-color: #A30B37; color:antiquewhite">
+          <v-list-item link class="text-center">
+            <v-list-item-title class="link-text" @click="goToFAQ">FAQ</v-list-item-title>
+          </v-list-item>
+          <v-list-item link class="text-center">
+            <v-list-item-title class="link-text" @click="goToContact">Contact Us</v-list-item-title>
+          </v-list-item>
+          <div class="social-icons text-center">
+            <v-btn v-for="(item, index) in connectLinks" :key="index" :href="item.url" icon>
+              <v-icon>{{ item.icon }}</v-icon>
+            </v-btn>
           </div>
-        </v-col>
-      </v-row>
-    </v-footer>
-  </v-app>
+        </v-list>
+      </v-col>
+    </v-row>
+    <v-row class="footer-bottom" justify="center" align="center">
+      <v-col cols="auto">
+        <div class="text-center copyright">
+          &copy; {{ currentYear }} Company Name. All rights reserved.
+        </div>
+      </v-col>
+    </v-row>
+  </v-footer>
 </template>
 
 <style scoped>
@@ -134,6 +135,9 @@ export default {
     }
   },
   methods: {
+    goToPage(url) {
+      this.$router.push(url);
+    },
     goToFAQ() {
       // Implement your FAQ page navigation logic here
     },
